@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+body {
+    font-family: "Montserrat";
+    background-color: #b8b6b6;
+    color: #fdfdfd;
+}
