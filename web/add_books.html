@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets/css/formstyles.css">
+      <!--...............bootstrap cdn...............................-->
+			<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous">	
+			</script>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 	rel="stylesheet"                                   integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-                          geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+      <title>Admin</title>
+   </head>
+   <body>
+       
+       <div class="bg_container">
+ <img src='assets/img/lis_logo2.png' width="200px" height="100px" align="right">
+ <form action="db_add_books" method="post">
+     <div class="card align-items-left rounded place fields_left" style="width:760px;color:brown;font-weight: bold;background-color:blanchedalmond;" >
+        <h5 class="mt-2 ms-2">ADD BOOK:</h5>
+        
+
+         <div class="card-body ">
+         
+                <!--.........................................book title........................................................-->
+
+            Book name<input class=" mb-2 ms-4 mt-3 field_decor " type="text" placeholder="title" name="name" id="name"onkeyup="validateName()">
+            <span id="nameError" class="form-text"></span><br>
+            <!--.........................................book id........................................................-->
+             ISBN<input class="field_decor mb-2 ms-5 mt-3 " type="text" placeholder="1-56619-909-3" name="isbn" id="isbn" onkeyup="validateISBN()">
+             <span id="isbnError" class="form-text"></span><br>
+            
+                 <!--.........................................Author........................................................-->
+
+          Author <input class="field_decor mb-2 ms-5 mt-3 " type="text" placeholder="john.." name="author" id="author" onkeyup="validateAuthor()">
+            <span id="authorError" class="form-text"></span><br>
+               
+                 <!--.........................................Branch........................................................-->
+
+           Branch<input class="field_decor mb-2  ms-5 mt-3 " type="text" placeholder="computers" name="branch" id="branch" onkeyup="validateBranch()">
+            <span id="branchError" class="form-text"></span><br>
+            
+           Rack No.<input class="field_decor mb-2 ms-4 mt-3" type="text" placeholder="CSE-25" name="rack" id="rack" onkeyup="validateEmail()">
+            <span id="numberError" class="form-text"></span><br>
+            
+            No. of copies<input class="field_decor mb-2 ms-2 mt-3" type="number" placeholder="available copies" name="copies" id="copies">
+            <span  class="form-text"></span><br>
+	
+                   <!--.........................................SubmitButton........................................................-->
+                   <button class="btn mt-3 mb-2 w-100 " style="background-color: brown;color: white;font-weight: bold" id="unique" onclick="return validateForm()">Add book</button>
+              <span id="submitError" class="form-text"></span>
+                <center><a href='clerk.html'<button class='btn btn-outline-dark mt-2 mb-2 w-50'>Home</button></a></center>
+             
+                 <!--.........................................Sign in through google........................................................
+                 <p>or sign in with:</p>
+                                   <div class="d-flex justify-content-center text-center mt-2 pt-1 mb-3">
+                                   
+                                <button class="btn btn-success w-75"><a href="#!" class="text-white"><i class="fa-brands fa-google"></i></a> &nbsp;&nbsp; Google</button>
+                                    </div> -->
+
+          </div>
+     </div>
+  </form>
+     
+</div>  
+        
+                <!--.........................................validating userdetails........................................................-->
+                        
+<script src='form_validation.js'></script>
+
+      <!-- Sidebar bg -->
+      <img src="assets/img/sidebar-bg.jpg" alt="sidebar img" class="bg-image">
+
+      <!--=============== HEADER ===============-->
+      
+
+            
+              
+            
+       
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/form_validation.js"></script>
+      
+   </body>
+</html>
